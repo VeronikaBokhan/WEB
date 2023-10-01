@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 48px;
+      }
+      .bordered {
+        border: 1px solid black;
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+
+      .relative {
+        position: relative;
+        left: 30px;
+      }
+
+      .absolute {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .sized {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bordered">static</div>
+    <div class="relative bordered">relative</div>
+    <div class="fixed bordered">fixed</div>
+    <div class="relative sized bordered">
+      relative
+      <div class="absolute bordered">absolute</div>
+    </div>
+    <div class="absolute bordered">absolute</div>
+  </body>
+</html>

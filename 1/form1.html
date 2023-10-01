@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма</title>
+  </head>
+  <body>
+    <h1>Анкета</h1>
+      <p>
+        <label>
+          Имя:
+          <input
+            type="text"
+            name="userName"
+            size="20"
+            placeholder="Введите имя"
+            required
+            autofocus
+          />
+        </label>
+      </p>
+      <p>
+        <label>
+          Email:
+          <input
+            type="email"
+            name="userEmail"
+            required
+            placeholder="Введите Email"
+            value="user@domain.com"
+          />
+        </label>
+      </p>
+      <p>
+        <label>
+          Сайт:
+          <input type="url" name="userSite" placeholder="Введите адрес сайта"
+        /></label>
+      </p>
+      <p>
+        <label>
+          Пароль:
+          <input type="password"  required />
+        </label>
+      </p>
+      <p>
+        <label>
+          Загрузите фото:
+          <input type="file" name="userPhoto" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Цвет глаз:
+          <input type="color" name="userColor" value="#4bbff1" />
+        </label>
+      </p>
+      <p>
+        Укажите возраст:
+        <br />
+        <label> <input type="radio" name="r1"  /> до 30 лет<br /> </label>
+        <label> <input type="radio" name="r1" value="2" checked /> 31 - 50 лет<br /> </label>
+        <label> <input type="radio" name="r1" value="3" /> старше 50 лет<br /> </label>
+      </p>
+      <p>
+        Укажите хобби:<br />
+        <label>
+          <input type="checkbox" name="b1" value="1" checked />
+          Cпорт
+          <br />
+        </label>
+        <label>
+          <input type="checkbox" name="b1" value="2" />
+          Туризм
+          <br />
+        </label>
+        <label>
+          <input type="checkbox" name="b1" value="3" checked />
+          TV / сериалы
+          <br />
+        </label>
+      </p>
+      <p>
+        Выберите марку авто:
+        <br />
+        <select name="userAuto">
+          <option value="0">Сделайте выбор</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="BMW" selected>BMW</option>
+          <option value="Toyota">Toyota</option>
+        </select>
+      </p>
+      <p>
+        <textarea name="aboutUser" cols="30" rows="10" placeholder="Расскажите о себе">
+Текст по умолчанию            </textarea
+        >
+      </p>
+      <p>
+        Ваш заряд позитивом (min - max):
+        <br />
+        <input type="range" name="rg" min="0" max="100" step=".25" val- ue="70" list="lst1" />
+        <datalist id="lst1">
+          <option value="0"></option>
+          <option value="50"></option>
+          <option value="100"></option>
+        </datalist>
+      </p>
+      <p>
+        Укажите дату и время: <br />
+        <input type="date" name="d1" /> <br />
+        <input type="time" name="d2" /> <br />
+        <input type="datetime-local" name="d3" /> <br />
+        <input type="week" name="d4" /> <br />
+        <input type="month" name="d5" /> <br />
+      </p>
+      <p>
+        <button type="submit">Отправить анкету</button>
+        <input type="reset" value="Очистить анкету" />
+      </p>
+    </form>
+  </body>
+</html>
